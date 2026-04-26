@@ -2,14 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/football-intel-ai/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon-HV1kWBx1.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Football Intel AI | Profesyonel Maç Analizleri</title>
     <meta name="description" content="Gemini 1.5 Pro destekli profesyonel futbol maç tahminleri ve analizleri." />
-    <script type="module" crossorigin src="/football-intel-ai/assets/index-CIz8vOXK.js"></script>
-    <link rel="stylesheet" crossorigin href="/football-intel-ai/assets/index-Bk5zD833.css">
+    <script type="module" crossorigin src="./assets/index-DZiZJAE2.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-2duw0rem.css">
   </head>
   <body>
     <div id="root"></div>
+    <style>
+      .live-matches-fab {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background: #00f2ff;
+        color: #05070a;
+        padding: 1rem 1.5rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        box-shadow: 0 10px 20px rgba(0, 242, 255, 0.3);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.3s ease;
+      }
+      .live-matches-fab:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 15px 30px rgba(0, 242, 255, 0.5);
+      }
+      .live-matches-fab .pulse-dot {
+        width: 8px;
+        height: 8px;
+        background: #ff3860;
+        border-radius: 50%;
+        animation: fab-pulse 1.5s infinite;
+      }
+      @keyframes fab-pulse {
+        0% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.5); opacity: 0.5; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+    </style>
+    <a href="matches.html" class="live-matches-fab">
+      <span class="pulse-dot"></span>
+      Canlı Maçlar
+    </a>
   </body>
 </html>
